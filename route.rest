@@ -1,13 +1,24 @@
 GET http://localhost:3000/subscribers
 
 ###
-
-GET http://localhost:3000/subscribers/24
+GET http://localhost:3000/subscribers/
 
 ###
 POST http://localhost:3000/subscribers
 Content-Type: application/json
 
 {
+    "name": "amit",
     "subscribedToChannel": "beazybee"
+}
+
+###
+DELETE http://localhost:3000/subscribers/64170fb192a3d6d30027b997
+
+###
+PATCH  http://localhost:3000/subscribers/64170fbc92a3d6d30027b99b
+Content-Type: application/json
+
+{
+    "name": "ullu"
 }
